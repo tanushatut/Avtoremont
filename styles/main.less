@@ -1,0 +1,358 @@
+@import "base/reset.css";
+@import "helpers/_variables";
+@import "components/_header";
+@import "components/_footer";
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+  url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+  url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+  url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+body{
+  background-color: @text-color;
+  text-align: center;
+  //max-width: 1200px;
+  margin: 0 auto;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  color: @light-grey;
+}
+
+h2{
+  text-transform: none;
+  background: url('../images/line.jpg') no-repeat center bottom;
+  padding: 39px;
+}
+
+.main{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.services {
+  padding: 0 35px 0 35px;
+  h3 {
+    text-transform: uppercase;
+    padding: 24px 0 15px 0;
+    vertical-align: top;
+    border-left: 2px solid #e5e4e4;
+  }
+  li {
+    padding: 0;
+    margin-bottom: 40px;
+    background: #f5f5f5;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+  ul :first-child{
+    h3{
+      border-left: none;
+    }
+  }
+  h2 {
+    margin: 74px 0 19px 0;
+    font-size: 21px;
+  }
+  p {
+    font-family: "OpenSansLight", sans-serif;
+    padding: 10px 0 104px;
+    line-height: 2em;
+    letter-spacing: 0.3px;
+  }
+}
+
+.line {
+  background: url('../images/line.jpg') no-repeat center top;
+  border: 0;
+  padding: 0;
+}
+
+.lineleft {
+  background: url('../images/line.jpg') no-repeat left top;
+  border: 0;
+  padding: 0;
+}
+
+.allservices, .learnmore, .list {
+  margin-top: 55px;
+  a {
+    font-size: 13px;
+    color: @text-btn-main;
+    margin: 0 auto;
+    padding: 10px 55px 10px 58px;
+    border: 1px solid @border-btn-main;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      background: @border-nav-left;
+      color: @text-color;
+    }
+  }
+}
+
+.learnmore{
+  margin-top: 47px;
+  a{
+    padding: 10px 42px 10px 43px;
+  }
+}
+
+.allservices {
+  margin-bottom: 80px;
+}
+
+.learnmore {
+  margin-bottom: 123px;
+}
+
+.repairs {
+  padding: 0;
+  h2 {
+    margin: 4px 0 10px 0;
+    font-size: 21px;
+  }
+  p {
+    font-family: "OpenSansLight", sans-serif;
+    padding: 18px 25px 100px 80px;
+    line-height: 2.1em;
+    letter-spacing: 1px;
+  }
+  h3 {
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    color: #000000;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5em;
+    padding-left: 30px;
+    letter-spacing: 0.4px;
+  }
+  li {
+    min-height: 150px;
+    padding: 0;
+    margin-right: -10px;
+    p {
+      padding: 0 0 0 30px;
+      margin-bottom: 30px;
+    }
+    img {
+      margin-bottom: 10px;
+      padding-left: 5px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.service {
+  padding: 0;
+  background-color: #f5f5f5;
+  p{
+    text-align: left;
+  }
+}
+
+.serviceimg {
+  padding: 0;
+  img{
+    float: right;
+    object-fit: cover;
+  }
+}
+
+.maintenance {
+  background-color: #f5f5f5;
+  text-align: left;
+  padding-left: 14px;
+  padding-right: 0px;
+  min-height: 673px;
+  //margin-top: 20px;
+  h2 {
+    margin: 105px 0 10px 0;
+    font-size: 21px;
+    background: url('../images/line.jpg') no-repeat left bottom;
+    padding: 0 0 65px 0;
+  }
+  p {
+    font-family: "OpenSansLight", sans-serif;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    line-height: 2em;
+    letter-spacing: 1px;
+  }
+  ul {
+    list-style-image: url('../images/marker.png');
+    line-height: 2.25em;
+    margin-bottom: 20px;
+    padding-left: 23px;
+    letter-spacing: 1px
+  }
+}
+
+.list
+{
+  margin-top: 61px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0;
+  margin-left: -30px;
+  a{
+    padding: 10px 52px 10px 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .repairs{
+    li{
+      p{
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .repairs {
+    h3 {
+      text-align: center;
+    }
+    li {
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .maintenance {
+    h2{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+  }
+  .lineleft {
+    background: url('../images/line.jpg') no-repeat center top;
+  }
+}
+
+@media (min-width: 1200px) {
+  .serviceimg {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceimg {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .services {
+    h3 {
+      border-left: none;
+    }
+    h2{
+      margin: 65px 0 19px 0;
+    }
+    p{
+      padding: 10px 0 100px;
+    }
+  }
+  .allservices{
+    margin-top: 35px;
+    margin-bottom: 75px;
+  }
+
+  .repairs{
+    h2{
+      margin: 3px 0 10px 0;
+    }
+    p{
+      padding: 18px 25px 94px 80px;
+    }
+    h3{
+      line-height: 2em;
+      padding-left: 17px;
+    }
+    li{
+      min-height: 176px;
+      margin-right: -20px;
+      margin-left: 10px;
+      p{
+        padding: 0 0 0 17px;
+        margin-bottom: 45px;
+      }
+    }
+  }
+
+  .learnmore {
+    margin-top: 41px;
+  }
+  .maintenance {
+    h2 {
+      padding: 0 0 56px 0;
+    }
+    p{
+      margin-bottom: 42px;
+    }
+  }
+
+  .footer{
+    section{
+      padding: 18px 0 10px 0;
+    }
+    ul{
+      min-height: 80px;
+    }
+  }
+  .socials{
+    margin: 0px -14px 0 18px;
+  }
+}
