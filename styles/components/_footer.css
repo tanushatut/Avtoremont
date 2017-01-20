@@ -91,14 +91,18 @@
     margin-top: 74px;
     height: 800px;
   }
+  .footer section {
+    padding-left: 15px;
+    padding-top: 67px;
+  }
   .footer h2 {
     font-size: 13px;
-    padding: 90px 0px 28px 2px;
+    padding: 40px 0px 28px 2px;
   }
   .footer .li1 {
     padding-left: 0;
   }
   .socials {
-    margin-top: 240px;
+    margin: 190px -14px 50px -26px;
   }
 }
