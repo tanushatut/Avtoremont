@@ -16,7 +16,7 @@ header h1 {
   font-family: "OpenSansSemiBold", sans-serif;
   line-height: 1.7em;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: 0px;
   width: 70%;
   margin: 0 auto;
 }
@@ -69,6 +69,25 @@ header h1 {
   font-size: 13px;
   display: block;
   color: #b5b5b5;
+}
+@media (max-width: 768px) {
+  header h1 {
+    padding-left: 0px;
+  }
+  .centered1 {
+    margin-top: 84px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    min-height: 486px;
+  }
+  header h1 {
+    width: 100%;
+  }
+  .centered {
+    padding-top: 15px;
+  }
 }
 .footer {
   padding: 0;
@@ -129,16 +148,49 @@ header h1 {
 .fa {
   color: #aeafb0;
 }
+@media (max-width: 992px) {
+  .footer section {
+    padding: 18px 0 10px 0;
+  }
+  .footer ul {
+    min-height: 80px;
+  }
+  .socials {
+    margin: 28px -14px 75px -8px;
+  }
+}
 @media (max-width: 768px) {
   .socials {
     position: absolute;
-    margin-top: 140px;
-    margin-bottom: 50px;
-    left: 12px;
+    left: 0px;
     width: 88%;
+    margin: 41px -14px 50px -12px;
   }
   .footer {
     height: 500px;
+  }
+  .footer h2 {
+    padding: 83px 0px 28px 0px;
+    margin-left: 0px;
+  }
+  .footer ul li ul {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    margin-top: 74px;
+    height: 800px;
+  }
+  .footer h2 {
+    font-size: 13px;
+    padding: 90px 0px 28px 2px;
+  }
+  .footer .li1 {
+    padding-left: 0;
+  }
+  .socials {
+    margin-top: 240px;
   }
 }
 @font-face {
@@ -413,9 +465,6 @@ h2 {
   .repairs li p {
     text-align: center;
   }
-  .maintenance h2 {
-    text-align: center;
-  }
   .maintenance p {
     text-align: center;
   }
@@ -437,11 +486,16 @@ h2 {
   .services h3 {
     border-left: none;
   }
+}
+@media (max-width: 992px) {
   .services h2 {
     margin: 65px 0 19px 0;
   }
   .services p {
     padding: 10px 0 100px;
+  }
+  .services li img {
+    height: 70%;
   }
   .allservices {
     margin-top: 35px;
@@ -475,13 +529,129 @@ h2 {
   .maintenance p {
     margin-bottom: 42px;
   }
-  .footer section {
-    padding: 18px 0 10px 0;
+}
+@media (max-width: 768px) {
+  .services {
+    padding: 0 15px 0 15px;
   }
-  .footer ul {
-    min-height: 80px;
+  .services h3 {
+    padding: 18px 0 15px 0;
   }
-  .socials {
-    margin: 0px -14px 0 18px;
+  .allservices {
+    margin-top: 61px;
+  }
+  .repairs p {
+    padding: 19px 20px 125px 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .repairs h2 {
+    margin: 0 0 10px 0;
+  }
+  .repairs h3 {
+    text-align: left;
+    padding-left: 52px;
+    width: 80%;
+  }
+  .repairs ul {
+    margin-left: 15px;
+  }
+  .repairs li {
+    min-height: 137px;
+  }
+  .repairs li p {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0 0 0 35px;
+  }
+  .learnmore {
+    margin-top: 102px;
+    margin-left: -6px;
+  }
+  .maintenance h2 {
+    margin: 100px 0 10px 0;
+  }
+  .maintenance p {
+    width: 90%;
+    margin-bottom: 16px;
+  }
+  .list {
+    margin-top: 50px;
+    margin-left: -8px;
+  }
+}
+@media (max-width: 320px) {
+  .services {
+    padding: 0 15px 0 15px;
+  }
+  .services h2 {
+    text-transform: uppercase;
+    margin: 83px 0 13px 0;
+  }
+  .services p {
+    padding: 10px 0 134px;
+  }
+  .services li {
+    margin-bottom: 37px;
+  }
+  .services li img {
+    height: 100%;
+  }
+  .allservices {
+    margin-top: 58px;
+    margin-bottom: 75px;
+  }
+  h2 {
+    padding: 25px;
+  }
+  .repairs h2 {
+    margin: 16px 0 10px 0;
+  }
+  .repairs h3 {
+    padding-bottom: 0px;
+  }
+  .repairs li {
+    min-height: 200px;
+    margin-right: -20px;
+    margin-left: 0px;
+  }
+  .repairs li p {
+    padding: 2px 0 0 0;
+    margin-bottom: 55px;
+  }
+  .repairs li img {
+    padding-left: 0;
+  }
+  .learnmore {
+    margin-top: 30px;
+  }
+  .maintenance {
+    padding-left: 0;
+  }
+  .maintenance h2 {
+    padding: 0 0 26px 0;
+    margin: 100px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    background: url('../images/line.jpg') no-repeat center bottom;
+  }
+  .maintenance p {
+    padding-bottom: 60px;
+    padding-top: 8px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+  .maintenance ul {
+    line-height: 2.2em;
+    padding-left: 8px;
+  }
+  .list {
+    margin-top: 64px;
+    margin-left: 0px;
+  }
+  .serviceimg img {
+    max-height: 233px;
   }
 }

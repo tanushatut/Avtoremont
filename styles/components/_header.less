@@ -16,7 +16,7 @@ header {
     font-family: "OpenSansSemiBold", sans-serif;
     line-height: 1.7em;
     text-transform: uppercase;
-    padding-left: 20px;
+    padding-left: 0px;
     width: 70%;
     margin: 0 auto;
   }
@@ -85,6 +85,29 @@ header {
       display: block;
       color: @header-nav;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  header{
+    h1{
+      padding-left: 0px;
+    }
+  }
+  .centered1 {
+    margin-top: 84px;
+  }
+}
+
+@media (max-width: 320px) {
+  header{
+    min-height: 486px;
+    h1{
+      width: 100%;
+    }
+  }
+  .centered{
+    padding-top: 15px;
   }
 }
 
